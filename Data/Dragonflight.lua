@@ -6,7 +6,7 @@ local N, type, fac, txt = addon.AddTooltipData, addon.TooltipDataType, addon.Fac
     N                           : required, function that will be called in KAF
     Achievement Id              : the achievement id
     Achievement Criteria Index  : the achievement criteria index; 0 if the achievement has no criteria
-    Object Type              : the id of the type of the object that will show the tooltip
+    Object Type                 : the id of the type of the object that will show the tooltip
     Object Id                   : the id of the object that will show the tooltip
     Not Completed Text          : the text to display if the criteria is not yet met
     Completed Text              : the text to display if the criteria is met
