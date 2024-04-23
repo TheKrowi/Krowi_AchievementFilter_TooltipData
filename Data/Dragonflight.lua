@@ -17,10 +17,10 @@ local N, type, fac, txt = addon.AddTooltipData, addon.TooltipDataType, addon.Fac
 
         If the achievement is linked to an npc, check the long additional string in the npc's tooltip, this is the npc's GUID.
         This is the format: [unitType]-0-[serverID]-[instanceID]-[zoneUID]-[ID]-[spawnUID]
-        If unitType is "Creature" of "Vehicle", the Object Type = type.Unit.
+        If unitType is "Creature" or "Vehicle", the Object Type = type.Unit.
         The Object Id is the ID.
 
-        If the text is not "Creature" of "Vehicle", please contact someone in https://discord.com/channels/805554495253643315/1150294582991523901
+        If the text is not "Creature" or "Vehicle", please contact someone in https://discord.com/channels/805554495253643315/1150294582991523901
 
         If the achievement is linked to an item, check the additional number in the item's tooltip, this is the Object Id.
         In this case the Object Type Id = type.Item.
