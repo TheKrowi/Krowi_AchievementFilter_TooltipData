@@ -503,7 +503,8 @@
         "ButtonFrameTemplate_HideAttic",
         "C_CurrencyInfo",
         "AchievementFrameFilterDropDownButton",
-        "AllTheThings"
+        "AllTheThings",
+        "KrowiAF"
     ],
     "Lua.diagnostics.disable": [
         "deprecated",
