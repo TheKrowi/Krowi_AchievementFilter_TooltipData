@@ -1,9 +1,6 @@
-local addonName, addon = ...;
+local _, addon = ...;
 
-local N = KrowiAF.AddTooltipData;
-local type = KrowiAF.GetTooltipDataTypes();
-local fac = KrowiAF.GetGetFactions();
-local txt = KrowiAF.GetTooltipDataTexts();
+local N, type, fac, txt = addon.AddTooltipData, addon.TooltipDataType, addon.Faction, addon.TooltipDataText;
 
 function addon.LoadDragonflightData()
     N(17897, 0, type.Unit, 190326, txt[15], txt[16]); -- Flashfrost Flyover Challenge: Bronze
