@@ -11,7 +11,7 @@ addon.Faction = KrowiAF.GetGetFactions();
 addon.TooltipDataText = KrowiAF.GetTooltipDataTexts();
 
 local function LoadData()
-    addon.LoadDragonflightData();
+    -- addon.LoadDragonflightData();
 end
 
 function loadHelper:OnEvent(event, arg1, arg2)
