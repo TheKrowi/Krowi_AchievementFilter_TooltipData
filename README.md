@@ -21,3 +21,39 @@
 </a>
 
 [Click here for full description](Descriptions/Wago.io.md)
+
+## Contribute data
+Contributing data is very welcome as maintaining this data and keeping it up to date is a timeconsuming task.
+
+I initiall assume you know how to work with git. The preffered way of contributing is creating a branch and committing pull requests with your data which will be approved by me. More details on how github works will be added later.
+
+In the `Data` folder you'll find `.lua` files for each expansion. If the expansion would not be there yet, take another one as a template and add it to the `Files.xml`.
+
+There are 2 ways to add data with either the `N` or `NT` functions.
+
+The `N` function is generally used when an achievement has a single criteria that needs to be added to the tooltip. It can also be used for each criteria individually but not preferred.
+```lua
+{ N, 17899, 0, type.Unit, 190326, txt[15], txt[16] }, -- Flashfrost Flyover Challenge: Gold
+```
+
+The `NT` function is used when an achievement has multiple criteria that need to be added to the tooltip.
+```lua
+{ -- Battle on the Dragon Isles
+    NT, 16464,
+    {
+        ObjectType = type.Unit,
+        NotCompletedText = txt[11],
+        CompletedText = txt[12]
+    },
+    {
+        { 1, 197447 }, -- Eye of the Stormling
+        { 2, 197417 }, -- Mini Manafiend Melee
+        { 3, 189376 }, -- Swog the Elder
+        { 4, 196069 }, -- The Grand Master
+        { 5, 197336 }, -- The Oldest Dragonfly
+        { 6, 196264 }, -- The Terrible Three
+        { 7, 197102 }, -- Two and Two Together
+        { 8, 197350 }, -- You Have to Start Somewhere
+    }
+},
+```
