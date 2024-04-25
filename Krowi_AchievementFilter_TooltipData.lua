@@ -6,6 +6,7 @@ loadHelper:RegisterEvent("ADDON_LOADED");
 loadHelper:RegisterEvent("PLAYER_LOGIN");
 
 addon.AddTooltipData = KrowiAF.AddTooltipData;
+addon.AddTooltipDataTable = KrowiAF.AddTooltipDataTable;
 addon.TooltipDataType = KrowiAF.GetTooltipDataTypes();
 addon.Faction = KrowiAF.GetGetFactions();
 addon.TooltipDataText = KrowiAF.GetTooltipDataTexts();
