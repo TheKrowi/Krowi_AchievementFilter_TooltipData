@@ -32,7 +32,7 @@ Contributing data is very welcome as maintaining this data and keeping it up to 
 I initiall assume you know how to work with git. The preffered way of contributing is creating a branch and committing pull requests with your data which will be approved by me. More details on how github works will be added later.
 
 ## Where to add data
-In the `Data` folder you'll find `.lua` files for each expansion. If the expansion would not be there yet, take another one as a template and add it to the `Files.xml`.
+In the `Data` folder you'll find `.lua` files for each expansion. If the expansion would not be there yet, take another one as a template and add it to the `Files.xml`. Achievements should be added to the expansion they're added in, not which expansion content they apply to.
 
 ## Functions
 There are 2 ways to add data with either the `N` or `NT` functions.
