@@ -22,21 +22,26 @@
 
 [Click here for full description](Descriptions/Wago.io.md)
 
-## Contribute data
+# Contribute data
 Contributing data is very welcome as maintaining this data and keeping it up to date is a timeconsuming task.
 
+## Workflow
 I initiall assume you know how to work with git. The preffered way of contributing is creating a branch and committing pull requests with your data which will be approved by me. More details on how github works will be added later.
 
+## Where to add data
 In the `Data` folder you'll find `.lua` files for each expansion. If the expansion would not be there yet, take another one as a template and add it to the `Files.xml`.
 
+## Functions
 There are 2 ways to add data with either the `N` or `NT` functions.
 
-The `N` function is generally used when an achievement has a single criteria that needs to be added to the tooltip. It can also be used for each criteria individually but not preferred.
+## Single criteria addition
+The `N` function is generally used when an achievement has a single criteria that needs to be added to a tooltip. It can also be used for each criteria individually but not preferred.
 ```lua
 { N, 17899, 0, type.Unit, 190326, txt[15], txt[16] }, -- Flashfrost Flyover Challenge: Gold
 ```
 
-The `NT` function is used when an achievement has multiple criteria that need to be added to the tooltip.
+## Multiple criteria addition
+The `NT` function is used when an achievement has multiple criteria that need to be added to a tooltip.
 ```lua
 { -- Battle on the Dragon Isles
     NT, 16464,
@@ -57,3 +62,53 @@ The `NT` function is used when an achievement has multiple criteria that need to
     }
 },
 ```
+
+## Format
+The function can be split up in multiple parts. The earlier examples will be used.
+```lua
+{ FUNCTION, ACHIEVEMENT ID, ACHIEVEMENT CRITERIA INDEX, OBJECT TYPE, OBJECT ID, NOT COMPLETED TEXT, COMPLETED TEXT, FACTION }, -- ACHIEVEMENT NAME
+
+{ -- ACHIEVEMENT NAME
+    FUNCTION, ACHIEVEMENT ID,
+    {
+        ObjectType = OBJECT TYPE,
+        NotCompletedText = NOT COMPLETED TEXT,
+        CompletedText = COMPLETED TEXT,
+        Faction = FACTION
+    },
+    {
+        { ACHIEVEMENT CRITERIA INDEX, OBJECT ID }, -- ACHIEVEMENT CRITERIA NAME
+        { ACHIEVEMENT CRITERIA INDEX, OBJECT ID }, -- ACHIEVEMENT CRITERIA NAME
+        { ACHIEVEMENT CRITERIA INDEX, OBJECT ID }, -- ACHIEVEMENT CRITERIA NAME
+        { ACHIEVEMENT CRITERIA INDEX, OBJECT ID }, -- ACHIEVEMENT CRITERIA NAME
+        { ACHIEVEMENT CRITERIA INDEX, OBJECT ID }, -- ACHIEVEMENT CRITERIA NAME
+        { ACHIEVEMENT CRITERIA INDEX, OBJECT ID }, -- ACHIEVEMENT CRITERIA NAME
+        { ACHIEVEMENT CRITERIA INDEX, OBJECT ID }, -- ACHIEVEMENT CRITERIA NAME
+        { ACHIEVEMENT CRITERIA INDEX, OBJECT ID }, -- ACHIEVEMENT CRITERIA NAME
+    }
+},
+```
+
+- **FUNCTION** : required, function that will be called in KAF
+- **ACHIEVEMENT ID** : the achievement id
+- **ACHIEVEMENT CRITERIA INDEX** : the achievement criteria index; 0 if the achievement has no criteria
+- **OBJECT TYPE** : the id of the type of the object that will show the tooltip
+- **OBJECT ID** : the id of the object that will show the tooltip
+- **NOT COMPLETED TEXT** : the text to display if the criteria is not yet met
+- **COMPLETED TEXT** : the text to display if the criteria is met
+- **FACTION** : optional, the faction if the criteria is faction specific
+- **ACHIEVEMENT NAME** : the name of the achievement
+- **ACHIEVEMENT CRITERIA NAME** : the name of the achievement criteria
+
+### Getting Object Type Id and Object Id
+Enable debug mode in KAF, this will display npc data and item Ids.
+
+If the achievement is linked to an npc, check the long additional string in the npc's tooltip, this is the npc's GUID.
+This is the format: [unitType]-0-[serverID]-[instanceID]-[zoneUID]-[ID]-[spawnUID]
+If unitType is "Creature" or "Vehicle", the Object Type = type.Unit.
+The Object Id is the ID.
+
+If the text is not "Creature" or "Vehicle", please contact someone in https://discord.com/channels/805554495253643315/1150294582991523901
+
+If the achievement is linked to an item, check the additional number in the item's tooltip, this is the Object Id.
+In this case the Object Type Id = type.Item.
