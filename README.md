@@ -22,6 +22,9 @@
 
 [Click here for full description](Descriptions/Wago.io.md)
 
+# Existing data
+Existing data is tracked in this ticket: https://github.com/TheKrowi/Krowi_AchievementFilter_TooltipData/issues/1
+
 # Contribute data
 Contributing data is very welcome as maintaining this data and keeping it up to date is a timeconsuming task.
 
