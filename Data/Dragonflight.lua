@@ -28,18 +28,18 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         NT, 16729,
         shared.ToAllTheSquirrelsPropertiesGroup,
         {
-            {1, 189737}, -- "Kelp Nibbler"
-            {2, 192135}, -- "Phoenix Hatchling"
-            {3, 193756}, -- "Docile Kit"
-            {4, 186306}, -- "Frilled Hatchling"
-            {5, 192948}, -- "Thicket Glider"
-            {6, 192942}, -- "Thunderspine Calf"
-            {7, 193594}, -- "Timbertooth Kit"
-            {8, 186481}, -- "Frosty Spiderling"
-            {9, 197718}, -- "Crimson Knocker"
-            {10, 195869}, -- "Diminuitive Boghopper"
-            {11, 196652}, -- "Reservoir Filly"
-            {12, 185148} -- "Rocdrop Scarab"
+            {1, 189737}, -- Kelp Nibbler
+            {2, 192135}, -- Phoenix Hatchling
+            {3, 193756}, -- Docile Kit
+            {4, 186306}, -- Frilled Hatchling
+            {5, 192948}, -- Thicket Glider
+            {6, 192942}, -- Thunderspine Calf
+            {7, 193594}, -- Timbertooth Kit
+            {8, 186481}, -- Frosty Spiderling
+            {9, 197718}, -- Crimson Knocker
+            {10, 195869}, -- Diminuitive Boghopper
+            {11, 196652}, -- Reservoir Filly
+            {12, 185148} -- Rocdrop Scarab
         }
     },
     { -- Undead Battler of the Dragon Isles
