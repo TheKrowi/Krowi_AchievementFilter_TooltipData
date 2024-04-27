@@ -16,6 +16,8 @@
 ## X-WoWInterface-Project-ID: 26229
 ## Dependencies: Krowi_AchievementFilter
 
+Libs\Files.xml
+
 Krowi_AchievementFilter_TooltipData.lua
 
 Data\Files.xml
