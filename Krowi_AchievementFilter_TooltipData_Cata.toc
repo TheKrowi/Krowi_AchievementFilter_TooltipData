@@ -2,7 +2,7 @@
 ## Title: Krowi's |cFF1D92C2Achievement Filter|r - TooltipData
 ## X-Prefix: KrowiAF_TD
 ## X-Acronym: KAF_TD
-## Version: 0.1-beta1
+## Version: 1.0
 ## Author: Krowi-Frostmane EU
 ## Notes: Adds additioanl Tooltip Data to objects if they are related to achievements.
 ## IconTexture: interface/icons/achievement_dungeon_heroic_gloryoftheraider
@@ -21,3 +21,4 @@ Libs\Files.xml
 Krowi_AchievementFilter_TooltipData.lua
 
 Data\Files.xml
+Data\04_CataClassic\Files.xml
