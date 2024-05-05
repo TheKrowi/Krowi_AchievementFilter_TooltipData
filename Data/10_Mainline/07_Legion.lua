@@ -52,5 +52,4 @@ KrowiAF.AdditionalTooltipData.Legion = {
             {21, {201683, 201684, 201685}, type.Spell}, -- Crispy Bacon
         }
     },
-
 };
