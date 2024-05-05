@@ -131,10 +131,7 @@ KrowiAF.AdditionalTooltipData.Cataclysm = {
     },
     { -- The Cataclysmic Gourmet (15, 30)
         NT, {5472, 5473},
-        {
-            NotCompletedText = txt[5],
-            CompletedText = txt[6]
-        },
+        shared.GourmetPropertiesGroup,
         {
 			{1, 62790, type.Item}, -- Darkbrew Lager
 			{1, 88015, type.Spell}, -- Darkbrew Lager

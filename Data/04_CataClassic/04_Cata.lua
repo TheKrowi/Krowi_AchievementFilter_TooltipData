@@ -11,7 +11,7 @@ KrowiAF.AdditionalTooltipData.Cataclysm = {
             CompletedText = txt[10]
         },
         {
-            -- NO CRITERIA DATA DEFINED
+            -- NO CRITERIA DATA AVAILABLE - 2024-05-05
         }
     },
     { -- Cataclysmically Delicious
@@ -21,7 +21,7 @@ KrowiAF.AdditionalTooltipData.Cataclysm = {
             CompletedText = txt[8]
         },
         {
-            -- NO CRITERIA DATA DEFINED
+            -- NO CRITERIA DATA AVAILABLE - 2024-05-05
         }
     },
     { -- To All the Squirrels Who Cared for Me
@@ -45,10 +45,7 @@ KrowiAF.AdditionalTooltipData.Cataclysm = {
     },
     { -- The Cataclysmic Gourmet (15, 30)
         NT, {5472, 5473},
-        {
-            NotCompletedText = txt[5],
-            CompletedText = txt[6]
-        },
+        shared.GourmetPropertiesGroup,
         {
             {1, {62649, 65432}, type.Item}, -- Fortune Cookie
             {1, 88019, type.Spell}, -- Fortune Cookie

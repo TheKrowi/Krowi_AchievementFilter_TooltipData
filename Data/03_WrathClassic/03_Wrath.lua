@@ -53,10 +53,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     },
     { -- The Outland Gourmet
         NT, 1800,
-        {
-            NotCompletedText = txt[5],
-            CompletedText = txt[6]
-        },
+        shared.GourmetPropertiesGroup,
         {
             {1, 33053, type.Item}, -- Hot Buttered Trout
             {1, 42305, type.Spell}, -- Hot Buttered Trout
@@ -129,10 +126,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     },
     { -- The Northrend Gourmet
         NT, 1779,
-        {
-            NotCompletedText = txt[5],
-            CompletedText = txt[6]
-        },
+        shared.GourmetPropertiesGroup,
         {
             {1, {43005, 43034}, type.Item}, -- Spiced Mammoth Treats
             {1, 57440, type.Spell}, -- Spiced Mammoth Treats

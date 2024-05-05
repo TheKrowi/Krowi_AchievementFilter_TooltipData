@@ -52,10 +52,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     },
     { -- The Outland Gourmet
         NT, 1800,
-        {
-            NotCompletedText = txt[5],
-            CompletedText = txt[6]
-        },
+        shared.GourmetPropertiesGroup,
         {
             {1, {33924, 33925}, type.Item}, -- Delicious Chocolate Cake
             {1, 43779, type.Spell}, -- Delicious Chocolate Cake
@@ -128,10 +125,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     },
     { -- The Northrend Gourmet
         NT, 1779,
-        {
-            NotCompletedText = txt[5],
-            CompletedText = txt[6]
-        },
+        shared.GourmetPropertiesGroup,
         {
             {1, {43491, 43509}, type.Item}, -- Bad Clams
             {1, 58523, type.Spell}, -- Bad Clams

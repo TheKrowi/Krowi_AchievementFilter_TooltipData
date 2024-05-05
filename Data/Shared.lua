@@ -9,3 +9,8 @@ shared.ToAllTheSquirrelsPropertiesGroup = {
     NotCompletedText = txt[1],
     CompletedText = txt[2]
 };
+
+shared.GourmetPropertiesGroup = {
+    NotCompletedText = txt[5],
+    CompletedText = txt[6]
+};
