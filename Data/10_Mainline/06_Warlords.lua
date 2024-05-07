@@ -1,15 +1,11 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local N, NT, type, fac, txt = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction, addon.TooltipDataText;
+local N, NT, type, fac = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction;
 
 KrowiAF.AdditionalTooltipData.WarlordsOfDaenor = {
     { -- Draenor Cuisine
         NT, 9502,
-        {
-            NotCompletedText = txt[7],
-            CompletedText = txt[8]
-        },
         {
             {1, {111449, 118323}, type.Item}, -- Blackrock Barbecue
             {1, 160986, type.Spell}, -- Blackrock Barbecue
@@ -55,7 +51,6 @@ KrowiAF.AdditionalTooltipData.WarlordsOfDaenor = {
     },
     { -- The Draenor Gourmet
         NT, 9501,
-        shared.GourmetPropertiesGroup,
         {
             {1, {111449, 118323}, type.Item}, -- Blackrock Barbecue
             {1, 160986, type.Spell}, -- Blackrock Barbecue

@@ -1,12 +1,11 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local N, NT, type, fac, txt = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction, addon.TooltipDataText;
+local N, NT, type, fac = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction;
 
 KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     { -- To All The Squirrels Who Shared My Life
-        NT, 2557,
-        shared.ToAllTheSquirrelsPropertiesGroup,
+        NT, 2557, type.Unit,
         {
             {1, 28440}, -- Tundra Penguin
             {2, 28093}, -- Sholazar Tickbird
@@ -23,12 +22,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- Pest Control
-        NT, 2556,
-        {
-            ObjectType = type.Unit,
-            NotCompletedText = txt[3],
-            CompletedText = txt[4]
-        },
+        NT, 2556, type.Unit,
         {
             {1, 1412}, -- Squirrel
             {2, 28202}, -- Zul'Drak Rat
@@ -52,7 +46,6 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     },
     { -- The Outland Gourmet
         NT, 1800,
-        shared.GourmetPropertiesGroup,
         {
             {1, 33053, type.Item}, -- Hot Buttered Trout
             {1, 42305, type.Spell}, -- Hot Buttered Trout
@@ -109,10 +102,6 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     { -- Second That Emotion
         NT, 1780,
         {
-            NotCompletedText = txt[7],
-            CompletedText = txt[8]
-        },
-        {
             {1, {43490, 43507}, type.Item}, -- Tasty Cupcake
             {1, 58512, type.Spell}, -- Tasty Cupcake
             {2, {43492, 43510}, type.Item}, -- Haunted Herring
@@ -125,7 +114,6 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     },
     { -- The Northrend Gourmet
         NT, 1779,
-        shared.GourmetPropertiesGroup,
         {
             {1, {43005, 43034}, type.Item}, -- Spiced Mammoth Treats
             {1, 57440, type.Spell}, -- Spiced Mammoth Treats
@@ -220,12 +208,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- The Winter Veil Gourmet
-        NT, 1688,
-        {
-            ObjectType = type.Item,
-            NotCompletedText = txt[5],
-            CompletedText = txt[6]
-        },
+        NT, 1688, type.Item,
         {
             {1, {17197, 17200}}, -- Gingerbread Cookie
             {2, {17198, 17201}}, -- Winter Veil Egg Nog
@@ -233,8 +216,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- To All The Squirrels I've Loved Before
-        NT, 1206,
-        shared.ToAllTheSquirrelsPropertiesGroup,
+        NT, 1206, type.Unit,
         {
             {1, 2442}, -- Cow
             {2, 620}, -- Chicken
