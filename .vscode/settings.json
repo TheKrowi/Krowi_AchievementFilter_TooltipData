@@ -535,20 +535,20 @@
             "exclude":"**/{.git,.vscode,Changelogs,Descriptions}/**",
             "deleteTargetOnDeploy": true
         },
-        {
-            "source":"E:\\World of Warcraft Addon Development\\Krowi_AchievementFilter_TooltipData",
-            "target":"F:\\World of Warcraft\\_classic_ptr_\\Interface\\AddOns\\Krowi_AchievementFilter_TooltipData",
-            "include":"**/*.{lua,toc,blp,tga,xml,md}",
-            "exclude":"**/{.git,.github,.vscode,Changelogs,Descriptions}/**",
-            "deleteTargetOnDeploy": true
-        },
         // {
         //     "source":"E:\\World of Warcraft Addon Development\\Krowi_AchievementFilter_TooltipData",
-        //     "target":"F:\\World of Warcraft\\_ptr_\\Interface\\AddOns\\Krowi_AchievementFilter_TooltipData",
+        //     "target":"F:\\World of Warcraft\\_classic_ptr_\\Interface\\AddOns\\Krowi_AchievementFilter_TooltipData",
         //     "include":"**/*.{lua,toc,blp,tga,xml,md}",
         //     "exclude":"**/{.git,.github,.vscode,Changelogs,Descriptions}/**",
         //     "deleteTargetOnDeploy": true
         // },
+        {
+            "source":"E:\\World of Warcraft Addon Development\\Krowi_AchievementFilter_TooltipData",
+            "target":"F:\\World of Warcraft\\_ptr_\\Interface\\AddOns\\Krowi_AchievementFilter_TooltipData",
+            "include":"**/*.{lua,toc,blp,tga,xml,md}",
+            "exclude":"**/{.git,.github,.vscode,Changelogs,Descriptions}/**",
+            "deleteTargetOnDeploy": true
+        },
     ],
     "fsdeploy.deployWorkspaceOnSave": true,
 }
