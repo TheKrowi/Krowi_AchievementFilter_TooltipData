@@ -3,107 +3,112 @@ local shared = addon.Shared;
 
 local N, NT, type, fac = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction;
 
-local ohnahranPlainsDragonRacingChallengeCriteria = {
-    {1, 190928}, -- Sundapple Copse Circuit Challenge
-    {2, 190928}, -- Sundapple Copse Circuit Reverse Challenge
-    {3, 191121}, -- Fen Flythrough Challenge
-    {4, 191121}, -- Fen Flythrough Reverse Challenge
-    {5, 191165}, -- Ravine River Run Challenge
-    {6, 191165}, -- Ravine River Run Reverse Challenge
-    {7, 191247}, -- Emerald Garden Ascent Challenge
-    {8, 191247}, -- Emerald Garden Ascent Reverse Challenge
-    {9, 196092}, -- River Rapids Route Challenge
-    {10, 196092}, -- River Rapids Route Reverse Challenge
-    {11, 191422}, -- Maruukai Dash Challenge
-    {12, 191511}, -- Mirror of the Sky Dash Challenge
-};
-
-local wakingShoresDragonRacingChallengeSilverGoldCriteria = {
-    {1, 190123}, -- Ruby Lifeshrine Loop Challenge
-    {2, 190123}, -- Ruby Lifeshrine Loop Reverse Challenge
-    {3, 190473}, -- Wild Preserve Slalom Challenge
-    {4, 190473}, -- Wild Preserve Slalom Reverse Challenge
-    {5, 190519}, -- Emberflow Flight Challenge
-    {6, 190519}, -- Emberflow Flight Reverse Challenge
-    {7, 190551}, -- Apex Canopy River Run Challenge
-    {8, 190551}, -- Apex Canopy River Run Reverse Challenge
-    {9, 190667}, -- Uktulut Coaster Challenge
-    {10, 190667}, -- Uktulut Coaster Reverse Challenge
-    {11, 190753}, -- Wingrest Roundabout Challenge
-    {12, 190753}, -- Wingrest Roundabout Reverse Challenge
-    {13, 190326}, -- Flashfrost Flyover Challenge
-    {14, 190326}, -- Flashfrost Flyover Reverse Challenge
-    {15, 190503}, -- Wild Preserve Circuit Challenge
-    {16, 190503}, -- Wild Preserve Circuit Reverse Challenge
-};
-
-local familyBattlerOfZaralekCavernCriteria =  {
-    {1, 201004}, -- Explorer Bezzert
-    {2, 204792}, -- Shinmura
-    {3, 204926}, -- Delver Mardei
-    {4, 204934}, -- Trainer Orlogg
-};
-
-local familyBattlerOfTheDragonIslesCriteria = {
-    {1, 197417}, -- Arcantus
-    {2, 197102}, -- Bakhushek
-    {3, 197336}, -- Enyobon
-    {4, 196264}, -- Haniko
-    {5, 196069}, -- Patchu
-    {6, 197350}, -- Setimothes
-    {7, 197447}, -- Stormamu
-    {8, 189376}, -- Swog
-};
-
-local ohnahranPlainsDragonRacingAdvancedReverseCriteria = {
-    {1, 190928}, -- Sundapple Copse Circuit
-    {2, 191121}, -- Fen Flythrough
-    {3, 191165}, -- Ravine River Run
-    {4, 191247}, -- Emerald Gardens Ascent
-    {7, 196092}, -- River Rapids Route
-};
-
-local ohnahranPlainsDragonRacingBasicCriteria = {
-    {1, 190928}, -- Sundapple Copse Circuit
-    {2, 191121}, -- Fen Flythrough
-    {3, 191165}, -- Ravine River Run
-    {4, 191247}, -- Emerald Gardens Ascent
-    {5, 191422}, -- Maruukai Dash
-    {6, 191511}, -- Mirror of the Sky Dash
-    {7, 196092}, -- River Rapids Route
-};
-
-local wakingShoresDragonRacingCriteria = {
-    {1, 190123}, -- Ruby Lifeshrine Loop
-    {2, 190473}, -- Wild Preserve Slalom
-    {3, 190519}, -- Emberflow Flight
-    {4, 190551}, -- Apex Canopy River Run
-    {5, 190667}, -- Uktulut Coaster
-    {6, 190753}, -- Wingrest Roundabout
-    {7, 190326}, -- Flashfrost Flyover
-    {8, 190503}, -- Wild Preserve Circuit
-};
-
 KrowiAF.AdditionalTooltipData.Dragonflight = {
-    { -- Ohn'ahran Plains Challenge: Gold
-        NT, 18756, type.Unit,
-        ohnahranPlainsDragonRacingChallengeCriteria
+    { -- Zaralek Cavern Challenge
+        NT, {18786, 18787, 18788}, type.Unit,
+        {
+            {1, 202524}, -- Crystal Circuit Challenge
+            {2, 202524}, -- Crystal Circuit Reverse Challenge
+            {3, 202676}, -- Caldera Cruise Challenge
+            {4, 202676}, -- Caldera Cruise Reverse Challenge
+            {5, 202749}, -- Brimstone Scramble Challenge
+            {6, 202749}, -- Brimstone Scramble Reverse Challenge
+            {7, 202772}, -- Shimmering Slalom Challenge
+            {8, 202772}, -- Shimmering Slalom Reverse Challenge
+            {9, 202795}, -- Loamm Roamm Challenge
+            {10, 202795}, -- Loamm Roamm Reverse Challenge
+            {11, 202973}, -- Sulfur Sprint Challenge
+            {12, 202973}, -- Sulfur Sprint Reverse Challenge
+        }
     },
-    { -- Ohn'ahran Plains Challenge: Silver
-        NT, 18755, type.Unit,
-        ohnahranPlainsDragonRacingChallengeCriteria
+    { -- Forbidden Reach Challenge
+        NT, {18779, 18780, 18781}, type.Unit,
+        {
+            {1, 200183}, -- Stormsunder Crater Circuit Challenge
+            {2, 200183}, -- Stormsunder Crater Circuit Reverse Challenge
+            {3, 200212}, -- Morqut Ascent Challenge
+            {4, 200212}, -- Morqut Ascent Reverse Challenge
+            {5, 200236}, -- Aerie Chasm Cruise Challenge
+            {6, 200236}, -- Aerie Chasm Cruise Reverse Challenge
+            {7, 200247}, -- Southern Reach Route Challenge
+            {8, 200247}, -- Southern Reach Route Reverse Challenge
+            {9, 200316}, -- Caldera Coaster Challenge
+            {10, 200316}, -- Caldera Coaster Reverse Challenge
+            {11, 200417}, -- Forbidden Reach Rush Challenge
+            {12, 200417}, -- Forbidden Reach Rush Reverse Challenge
+        }
     },
-    { -- Ohn'ahran Plains Challenge: Bronze
-        NT, 18754, type.Unit,
-        ohnahranPlainsDragonRacingChallengeCriteria
+    { -- Thaldraszus Challenge
+        NT, {18760, 18761, 18762}, type.Unit,
+        {
+            {1, 192555}, -- The Flowing Forest Flight Challenge
+            {2, 192555}, -- The Flowing Forest Flight Reverse Challenge
+            {3, 193651}, -- Tyrhold Trial Challenge
+            {4, 193651}, -- Tyrhold Trial Reverse Challenge
+            {5, 193911}, -- Cliffside Circuit Challenge
+            {6, 193911}, -- Cliffside Circuit Reverse Challenge
+            {7, 193951}, -- Academy Ascent Challenge
+            {8, 193951}, -- Academy Ascent Reverse Challenge
+            {9, 194348}, -- Garden Gallivant Challenge
+            {10, 194348}, -- Garden Gallivant Reverse Challenge
+            {11, 194372}, -- Caverns Criss-Cross Challenge
+            {12, 194372}, -- Caverns Criss-Cross Reverse Challenge
+        }
     },
-    { -- Waking Shores Challenge: Gold
-        NT, 18750, type.Unit,
-        wakingShoresDragonRacingChallengeSilverGoldCriteria
+    { -- Azure Span Challenge
+        NT, {18757, 18758, 18759}, type.Unit,
+        {
+            {1, 191572}, -- The Azure Span Sprint Challenge
+            {2, 191572}, -- The Azure Span Sprint Reverse Challenge
+            {3, 191947}, -- The Azure Span Slalom Challenge
+            {4, 191947}, -- The Azure Span Slalom Reverse Challenge
+            {5, 192115}, -- The Vakthros Ascent Challenge
+            {6, 192115}, -- The Vakthros Ascent Reverse Challenge
+            {7, 192886}, -- Iskaara Tour Challenge
+            {8, 192886}, -- Iskaara Tour Reverse Challenge
+            {9, 192945}, -- Frostland Flyover Challenge
+            {10, 192945}, -- Frostland Flyover Reverse Challenge
+            {11, 193027}, -- Archive Ambit Challenge
+            {12, 193027}, -- Archive Ambit Reverse Challenge
+        }
     },
-    { -- Waking Shores Challenge: Silver
-        NT, 18749, type.Unit,
-        wakingShoresDragonRacingChallengeSilverGoldCriteria
+    { -- Ohn'ahran Plains Challenge
+        NT, {18754, 18755, 18756}, type.Unit,
+        {
+            {1, 190928}, -- Sundapple Copse Circuit Challenge
+            {2, 190928}, -- Sundapple Copse Circuit Reverse Challenge
+            {3, 191121}, -- Fen Flythrough Challenge
+            {4, 191121}, -- Fen Flythrough Reverse Challenge
+            {5, 191165}, -- Ravine River Run Challenge
+            {6, 191165}, -- Ravine River Run Reverse Challenge
+            {7, 191247}, -- Emerald Garden Ascent Challenge
+            {8, 191247}, -- Emerald Garden Ascent Reverse Challenge
+            {9, 196092}, -- River Rapids Route Challenge
+            {10, 196092}, -- River Rapids Route Reverse Challenge
+            {11, 191422}, -- Maruukai Dash Challenge
+            {12, 191511}, -- Mirror of the Sky Dash Challenge
+        }
+    },
+    { -- Waking Shores Challenge: Silver / Gold
+        NT, {18749, 18750}, type.Unit,
+        {
+            {1, 190123}, -- Ruby Lifeshrine Loop Challenge
+            {2, 190123}, -- Ruby Lifeshrine Loop Reverse Challenge
+            {3, 190473}, -- Wild Preserve Slalom Challenge
+            {4, 190473}, -- Wild Preserve Slalom Reverse Challenge
+            {5, 190519}, -- Emberflow Flight Challenge
+            {6, 190519}, -- Emberflow Flight Reverse Challenge
+            {7, 190551}, -- Apex Canopy River Run Challenge
+            {8, 190551}, -- Apex Canopy River Run Reverse Challenge
+            {9, 190667}, -- Uktulut Coaster Challenge
+            {10, 190667}, -- Uktulut Coaster Reverse Challenge
+            {11, 190753}, -- Wingrest Roundabout Challenge
+            {12, 190753}, -- Wingrest Roundabout Reverse Challenge
+            {13, 190326}, -- Flashfrost Flyover Challenge
+            {14, 190326}, -- Flashfrost Flyover Reverse Challenge
+            {15, 190503}, -- Wild Preserve Circuit Challenge
+            {16, 190503}, -- Wild Preserve Circuit Reverse Challenge
+        }
     },
     { -- Waking Shores Challenge: Bronze
         NT, 18748, type.Unit,
@@ -126,69 +131,14 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
             {16, 190473}, -- Wild Preserve Slalom Reverse Challenge: Bronze
         }
     },
-    { -- Ohn'ahran Plains Reverse: Gold
-        NT, 17200, type.Unit,
-        ohnahranPlainsDragonRacingAdvancedReverseCriteria
-    },
-    { -- Ohn'ahran Plains Reverse: Silver
-        NT, 17199, type.Unit,
-        ohnahranPlainsDragonRacingAdvancedReverseCriteria
-    },
-    { -- Ohn'ahran Plains Reverse: Bronze
-        NT, 17198, type.Unit,
-        ohnahranPlainsDragonRacingAdvancedReverseCriteria
-    },
-    { -- Waking Shores Reverse: Gold
-        NT, 17197, type.Unit,
-        wakingShoresDragonRacingCriteria
-    },
-    { -- Waking Shores Reverse: Silver
-        NT, 17196, type.Unit,
-        wakingShoresDragonRacingCriteria
-    },
-    { -- Waking Shores Reverse: Bronze
-        NT, 17195, type.Unit,
-        wakingShoresDragonRacingCriteria
-    },
-    { -- Undead Battler of Zaralek Caverm
-        NT, 17918, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
-    },
-    { -- Mechanical Battler of Zaralek Cavern
-        NT, 17917, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
-    },
-    { -- Magic Battler of Zaralek Cavern
-        NT, 17916, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
-    },
-    { -- Humanoid Battler of Zaralek Cavern
-        NT, 17915, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
-    },
-    { -- Flying Battler of Zaralek Cavern
-        NT, 17905, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
-    },
-    { -- Elemental Battler of Zaralek Cavern
-        NT, 17904, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
-    },
-    { -- Dragonkin Battler of Zaralek Cavern
-        NT, 17890, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
-    },
-    { -- Critter Battler of Zaralek Cavern
-        NT, 17883, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
-    },
-    { -- Beast Battler of Zaralek Cavern
-        NT, 17882, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
-    },
-    { -- Aquatic Battler of Zaralek Cavern
-        NT, 17881, type.Unit,
-        familyBattlerOfZaralekCavernCriteria
+    { -- Battler of Zaralek Cavern Aquatic / Beast / Critter / Dragonkin / Elemental / Flying / Humanoid / Magic / Mechanical / Undead
+        NT, {17881, 17882, 17883, 17890, 17904, 17905, 17915, 17916, 17917, 17918}, type.Unit,
+        {
+            {1, 201004}, -- Explorer Bezzert
+            {2, 204792}, -- Shinmura
+            {3, 204926}, -- Delver Mardei
+            {4, 204934}, -- Trainer Orlogg
+        }
     },
     { -- Battle in Zaralek Cavern
         NT, 17880, type.Unit,
@@ -208,6 +158,17 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
             {4, 200696}, -- Flow
         }
     },
+    { -- Zaralek Cavern Basic / Advanced / Reverse
+        NT, {17483, 17484, 17485, 17486, 17487, 17488, 17489, 17490, 17491}, type.Unit,
+        {
+            {1, 202524}, -- Crystal Circuit
+            {2, 202676}, -- Caldera Cruise
+            {3, 202749}, -- Brimstone Scramble
+            {4, 202772}, -- Shimmering Slalom
+            {5, 202795}, -- Loamm Roamm
+            {6, 202973}, -- Sulfur Sprint
+        }
+    },
     { -- Battle on the Dragon Isles II
         NT, 17406, type.Unit,
         {
@@ -219,6 +180,17 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
             {6, 201878}, -- Paws of Thunder
             {7, 201899}, -- A New Vocation
             {8, 202458}, -- They're Full of Stars!
+        }
+    },
+    { -- Forbidden Reach Basic / Advanced / Reverse
+        NT, {17279, 17280, 17281, 17284, 17286, 17287, 17288, 17289, 17290}, type.Unit,
+        {
+            {1, 200183}, -- Stormsunder Crater Circuit
+            {2, 200212}, -- Morqut Ascent
+            {3, 200236}, -- Aerie Chasm Cruise
+            {4, 200247}, -- Southern Reach Route
+            {5, 200316}, -- Caldera Coaster
+            {6, 200417}, -- Forbidden Reach Rush
         }
     },
     { -- To All the Squirrels Hidden Til Now
@@ -263,45 +235,18 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
             {20, 200903}, -- Moira's Choice Espresso
         }
     },
-    { -- Undead Battler of the Dragon Isles
-        NT, 16511, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
-    },
-    { -- Mechanical Battler of the Dragon Isles
-        NT, 16510, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
-    },
-    { -- Magic Battler of the Dragon Isles
-        NT, 16509, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
-    },
-    { -- Humanoid Battler of the Dragon Isles
-        NT, 16508, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
-    },
-    { -- Flying Battler of the Dragon Isles
-        NT, 16507, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
-    },
-    { -- Elemental Battler of the Dragon Isles
-        NT, 16506, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
-    },
-    { -- Dragonkin Battler of the Dragon Isles
-        NT, 16505, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
-    },
-    { -- Critter Battler of the Dragon Isles
-        NT, 16504, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
-    },
-    { -- Beast Battler of the Dragon Isles
-        NT, 16503, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
-    },
-    { -- Aquatic Battler of the Dragon Isles
-        NT, 16501, type.Unit,
-        familyBattlerOfTheDragonIslesCriteria
+    { -- Battler of the Dragon Isles Aquatic / Beast / Critter / Dragonkin / Elemental / Flying / Humanoid / Magic / Mechanical / Undead
+        NT, {16501, 16503, 16504, 16505, 16506, 16507, 16508, 16509, 16510, 16511}, type.Unit,
+        {
+            {1, 197417}, -- Arcantus
+            {2, 197102}, -- Bakhushek
+            {3, 197336}, -- Enyobon
+            {4, 196264}, -- Haniko
+            {5, 196069}, -- Patchu
+            {6, 197350}, -- Setimothes
+            {7, 197447}, -- Stormamu
+            {8, 189376}, -- Swog
+        }
     },
     { -- Battle on the Dragon Isles
         NT, 16464, type.Unit,
@@ -341,52 +286,61 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
             {20, 189388}, -- Zephyr
         }
     },
-    { -- Ohn'ahran Plains Advanced: Gold
-        NT, 15932, type.Unit,
-        ohnahranPlainsDragonRacingAdvancedReverseCriteria
+    { -- Ohn'ahran Plains Advanced / Reverse
+        NT, {15930, 15931, 15932, 17198, 17199, 17200}, type.Unit,
+        {
+            {1, 190928}, -- Sundapple Copse Circuit
+            {2, 191121}, -- Fen Flythrough
+            {3, 191165}, -- Ravine River Run
+            {4, 191247}, -- Emerald Gardens Ascent
+            {7, 196092}, -- River Rapids Route
+        }
     },
-    { -- Ohn'ahran Plains Advanced: Silver
-        NT, 15931, type.Unit,
-        ohnahranPlainsDragonRacingAdvancedReverseCriteria
+    { -- Thaldraszus Basic / Advanced / Reverse
+        NT, {15924, 15925, 15926, 15936, 15937, 15938, 17204, 17205, 17206}, type.Unit,
+        {
+            {1, 192555}, -- The Flowing Forest Flight
+            {2, 193651}, -- Tyrhold Trial
+            {3, 193911}, -- Cliffside Circuit
+            {4, 193951}, -- Academy Ascent
+            {5, 194348}, -- Garden Gallivant
+            {6, 194372}, -- Caverns Criss-Cross
+        }
     },
-    { -- Ohn'ahran Plains Advanced: Bronze
-        NT, 15930, type.Unit,
-        ohnahranPlainsDragonRacingAdvancedReverseCriteria
+    { -- Azure Span Basic / Advanced / Reverse
+        NT, {15921, 15922, 15923, 15933, 15934, 15935, 17201, 17202, 17203}, type.Unit,
+        {
+            {1, 191572}, -- The Azure Span Sprint
+            {2, 191947}, -- The Azure Span Slalom
+            {3, 192115}, -- The Vakthros Ascent
+            {4, 192886}, -- Iskaara Tour
+            {5, 192945}, -- Frostland Flyover
+            {6, 193027}, -- Archive Ambit
+        }
     },
-    { -- Waking Shores Advanced: Gold
-        NT, 15929, type.Unit,
-        wakingShoresDragonRacingCriteria
+    { -- Ohn'ahran Plains Basic
+        NT, {15918, 15919, 15920}, type.Unit,
+        {
+            {1, 190928}, -- Sundapple Copse Circuit
+            {2, 191121}, -- Fen Flythrough
+            {3, 191165}, -- Ravine River Run
+            {4, 191247}, -- Emerald Gardens Ascent
+            {5, 191422}, -- Maruukai Dash
+            {6, 191511}, -- Mirror of the Sky Dash
+            {7, 196092}, -- River Rapids Route
+        }
     },
-    { -- Waking Shores Advanced: Silver
-        NT, 15928, type.Unit,
-        wakingShoresDragonRacingCriteria
-    },
-    { -- Waking Shores Advanced: Bronze
-        NT, 15927, type.Unit,
-        wakingShoresDragonRacingCriteria
-    },
-    { -- Ohn'ahran Plains: Gold
-        NT, 15920, type.Unit,
-        ohnahranPlainsDragonRacingBasicCriteria
-    },
-    { -- Ohn'ahran Plains: Silver
-        NT, 15919, type.Unit,
-        ohnahranPlainsDragonRacingBasicCriteria
-    },
-    { -- Ohn'ahran Plains: Bronze
-        NT, 15918, type.Unit,
-        ohnahranPlainsDragonRacingBasicCriteria
-    },
-    { -- Waking Shores: Gold
-        NT, 15917, type.Unit,
-        wakingShoresDragonRacingCriteria
-    },
-    { -- Waking Shores: Silver
-        NT, 15916, type.Unit,
-        wakingShoresDragonRacingCriteria
-    },
-    { -- Waking Shores: Bronze
-        NT, 15915, type.Unit,
-        wakingShoresDragonRacingCriteria
+    { -- Waking Shores Basic / Advanced / Reverse
+        NT, {15915, 15916, 15917, 15927, 15928, 15929, 17195, 17196, 17197}, type.Unit,
+        {
+            {1, 190123}, -- Ruby Lifeshrine Loop
+            {2, 190473}, -- Wild Preserve Slalom
+            {3, 190519}, -- Emberflow Flight
+            {4, 190551}, -- Apex Canopy River Run
+            {5, 190667}, -- Uktulut Coaster
+            {6, 190753}, -- Wingrest Roundabout
+            {7, 190326}, -- Flashfrost Flyover
+            {8, 190503}, -- Wild Preserve Circuit
+        }
     },
 };
