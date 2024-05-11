@@ -18,7 +18,5 @@
 
 Libs\Files.xml
 
-Krowi_AchievementFilter_TooltipData.lua
-
 Data\Files.xml
-Data\10_Mainline\Files.xml
+Data\00_Mainline\Files.xml

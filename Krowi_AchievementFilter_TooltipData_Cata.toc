@@ -18,7 +18,5 @@
 
 Libs\Files.xml
 
-Krowi_AchievementFilter_TooltipData.lua
-
 Data\Files.xml
 Data\04_CataClassic\Files.xml
