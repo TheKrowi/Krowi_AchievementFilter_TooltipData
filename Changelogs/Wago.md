@@ -7,3 +7,4 @@
 ### Added (1.2)
 - Moved remaining data for Dragonflight
 - Dragon Racing Challenges
+- Northrend Cup

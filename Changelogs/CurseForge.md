@@ -10,4 +10,5 @@
 <ul>
 <li>Moved remaining data for Dragonflight</li>
 <li>Dragon Racing Challenges</li>
+<li>Northrend Cup</li>
 </ul>
