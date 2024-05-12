@@ -4,6 +4,23 @@ local shared = addon.Shared;
 local N, NT, type, fac = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction;
 
 KrowiAF.AdditionalTooltipData.Dragonflight = {
+    { -- Northrend Basic / Advanced / Reverse
+        NT, {19674, 19675, 19676, 19677, 19679, 19681, 19682, 19683, 19684}, type.Unit,
+        {
+            {1, 211762}, -- Scalawag Slither
+            {2, 211886}, -- Daggercap Dart
+            {3, 211940}, -- Blackriver Burble
+            {4, 212003}, -- Zul'Drak Zephyr
+            {5, 212118}, -- Makers' Marathon
+            {6, 212193}, -- Crystalsong Crisis
+            {7, 212250}, -- Dragonblight Dragon Flight
+            {8, 212418}, -- Citadel Sortie
+            {9, 212666}, -- Sholazar Spree
+            {10, 213086}, -- Geothermal Jaunt
+            {11, 215795}, -- Gundrak Fast Track
+            {12, 215825}, -- Coldarra Climb
+        }
+    },
     { -- Zaralek Cavern Challenge
         NT, {18786, 18787, 18788}, type.Unit,
         {
