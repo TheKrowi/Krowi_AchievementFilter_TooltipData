@@ -5,6 +5,7 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Moved remaining data for Dragonflight
 - Dragon Racing Challenges
+- Northrend Cup
 
 ## 1.1 - 2024-05-07
 ### Added
