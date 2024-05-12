@@ -1,4 +1,4 @@
-## Interface: 100207
+## Interface: 40400
 ## Title: Krowi's |cFF1D92C2Achievement Filter|r - TooltipData
 ## X-Prefix: KrowiAF_TD
 ## X-Acronym: KAF_TD
@@ -19,4 +19,4 @@
 Libs\Files.xml
 
 Data\Files.xml
-Data\00_Mainline\Files.xml
+Data\04_CataClassic\Files.xml
