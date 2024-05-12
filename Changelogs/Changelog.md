@@ -3,3 +3,7 @@
 
 ### Added (1.1)
 - Moved most data for Dragonflight, Dragon races WIP
+
+### Added (1.2)
+- Moved remaining data for Dragonflight
+- Dragon Racing Challenges

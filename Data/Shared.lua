@@ -4,7 +4,5 @@ local shared = addon.Shared;
 
 addon.AddTooltipData = KrowiAF.AddTooltipData;
 addon.AddTooltipDataTable = KrowiAF.AddTooltipDataTable;
-addon.AddTooltipDataTableAchievements = KrowiAF.AddTooltipDataTableAchievements;
-addon.TooltipDataType = KrowiAF.GetTooltipDataTypes();
+addon.TooltipDataType = Enum.TooltipDataType;
 addon.Faction = KrowiAF.GetGetFactions();
-addon.TooltipDataText = KrowiAF.GetTooltipDataTexts();

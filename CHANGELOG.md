@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## 1.2 - 2024-05-10
+## 1.2 - 2024-05-12
 ### Added
 - Moved remaining data for Dragonflight
 - Dragon Racing Challenges
