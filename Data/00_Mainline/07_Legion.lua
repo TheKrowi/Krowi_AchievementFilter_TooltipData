@@ -1,11 +1,11 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local N, NT, type, fac = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction;
+local datum, data, type = KrowiAF.AddTooltipDatum, KrowiAF.AddTooltipData, Enum.TooltipDataType;
 
 KrowiAF.AdditionalTooltipData.Legion = {
     { -- The Legion Menu
-        NT, 10762,
+        data, 10762,
         {
             {1, {133557, 133810, 133831, 133851}, type.Item}, -- Salt and Pepper Shank
             {1, {201413, 201524, 201544}, type.Spell}, -- Salt and Pepper Shank

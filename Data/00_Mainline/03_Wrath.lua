@@ -1,11 +1,11 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local N, NT, type, fac = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction;
+local datum, data, type = KrowiAF.AddTooltipDatum, KrowiAF.AddTooltipData, Enum.TooltipDataType;
 
 KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     { -- To All The Squirrels Who Shared My Life
-        NT, 2557, type.Unit,
+        data, 2557, type.Unit,
         {
             {1, {29328, 62693, 150873}}, -- Arctic Hare
             {2, {31685, 62695}}, -- Borean Marmot
@@ -22,7 +22,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- Pest Control
-        NT, 2556, type.Unit,
+        data, 2556, type.Unit,
         {
             {1, {16068, 62022}}, -- Larva
             {2, {4953, 61367}}, -- Water Snake
@@ -45,7 +45,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- The Outland Gourmet
-        NT, 1800,
+        data, 1800,
         {
             {1, {33924, 33925}, type.Item}, -- Delicious Chocolate Cake
             {1, 43779, type.Spell}, -- Delicious Chocolate Cake
@@ -100,7 +100,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- Second That Emotion
-        NT, 1780,
+        data, 1780,
         {
             {1, {43491, 43509}, type.Item}, -- Bad Clams
             {1, 58523, type.Spell}, -- Bad Clams
@@ -113,7 +113,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- The Northrend Gourmet
-        NT, 1779,
+        data, 1779,
         {
             {1, {43491, 43509}, type.Item}, -- Bad Clams
             {1, 58523, type.Spell}, -- Bad Clams
@@ -208,7 +208,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- The Winter Veil Gourmet
-        NT, 1688, type.Item,
+        data, 1688, type.Item,
         {
             {1, {17198, 17201}}, -- Egg Nog
             {2, {34411, 34413}}, -- Hot Apple Cider
@@ -216,7 +216,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- To All The Squirrels I've Loved Before
-        NT, 1206, type.Unit,
+        data, 1206, type.Unit,
         {
             {1, 25677}, -- Borean Frog
             {2, {6368, 35610, 62019, 66163, 112694, 112698, 117203, 137538, 161221, 167914, 197382}}, -- Cat

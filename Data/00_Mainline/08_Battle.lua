@@ -1,7 +1,7 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local N, NT, type, fac = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction;
+local datum, data, type = KrowiAF.AddTooltipDatum, KrowiAF.AddTooltipData, Enum.TooltipDataType;
 
 local battleForAzerothMenuCriteria =  {
     {1, {156526, 162288, 162289}, type.Item}, -- Bountiful Captain's Feast
@@ -32,16 +32,16 @@ local battleForAzerothMenuCriteria =  {
 
 KrowiAF.AdditionalTooltipData.BattleForAzeroth = {
     { -- The Zandalari Menu
-        NT, 12746,
+        data, 12746,
         {
-            Faction = fac.Horde,
+            Faction = PLAYER_FACTION_GROUP.Horde,
         },
         battleForAzerothMenuCriteria
     },
     { -- The Kul Tiran Menu / The Zandalari Menu
-        NT, 12744,
+        data, 12744,
         {
-            Faction = fac.Alliance,
+            Faction = PLAYER_FACTION_GROUP.Alliance,
         },
         battleForAzerothMenuCriteria
     },

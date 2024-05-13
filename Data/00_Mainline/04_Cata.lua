@@ -1,11 +1,11 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local N, NT, type, fac = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction;
+local datum, data, type = KrowiAF.AddTooltipDatum, KrowiAF.AddTooltipData, Enum.TooltipDataType;
 
 KrowiAF.AdditionalTooltipData.Cataclysm = {
     { -- Drown Your Sorrows
-        NT, 5754,
+        data, 5754,
         {
             {1, 62790, type.Item}, -- Darkbrew Lager
             {1, 88015, type.Spell}, -- Darkbrew Lager
@@ -24,7 +24,7 @@ KrowiAF.AdditionalTooltipData.Cataclysm = {
         }
     },
     { -- Cataclysmically Delicious
-        NT, 5753,
+        data, 5753,
         {
             {1, {62661, 65426}, type.Item}, -- Baked Rockfish
             {1, 88003, type.Spell}, -- Baked Rockfish
@@ -103,7 +103,7 @@ KrowiAF.AdditionalTooltipData.Cataclysm = {
         }
     },
     { -- To All the Squirrels Who Cared for Me
-        NT, 5548, type.Unit,
+        data, 5548, type.Unit,
         {
             {1, {49779, 62189}}, -- Alpine Chipmunk
             {2, 48630}, -- Baradin Fox Kit
@@ -121,7 +121,7 @@ KrowiAF.AdditionalTooltipData.Cataclysm = {
         }
     },
     { -- The Cataclysmic Gourmet (15, 30)
-        NT, {5472, 5473},
+        data, {5472, 5473},
         {
 			{1, 62790, type.Item}, -- Darkbrew Lager
 			{1, 88015, type.Spell}, -- Darkbrew Lager

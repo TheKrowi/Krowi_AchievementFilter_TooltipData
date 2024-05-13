@@ -48,18 +48,18 @@ Example: if an achievement was added in Wrath of the Lich King, tooltip data sho
 There are 2 ways to add data with either the `N` or `NT` functions.
 
 ### Single criteria addition
-The `N` function is generally used when an achievement has a single criteria that needs to be added to a tooltip. It can also be used for each criteria individually but not preferred.
+The `datum` function is generally used when an achievement has a single criteria that needs to be added to a tooltip. It can also be used for each criteria individually but not preferred.
 ```lua
-{N, 17899, 0, type.Unit, 190326}, -- Flashfrost Flyover Challenge: Gold
+{datum, 17899, 0, type.Unit, 190326}, -- Flashfrost Flyover Challenge: Gold
 ```
 
 #### Format
 The function can be split up in multiple parts. The earlier examples will be used.
 ```lua
-{N, ACHIEVEMENT ID, ACHIEVEMENT CRITERIA INDEX, OBJECT TYPE, OBJECT ID, FACTION}, -- ACHIEVEMENT NAME
+{datum, ACHIEVEMENT ID, ACHIEVEMENT CRITERIA INDEX, OBJECT TYPE, OBJECT ID, FACTION}, -- ACHIEVEMENT NAME
 ```
 
-- **N** : required, function that will be called in KAF
+- **datum** : required, function that will be called in KAF
 - **ACHIEVEMENT ID** : the achievement id
 - **ACHIEVEMENT CRITERIA INDEX** : the achievement criteria index; 0 if the achievement has no criteria
 - **OBJECT TYPE** : the id of the type of the object that will show the tooltip
@@ -68,10 +68,10 @@ The function can be split up in multiple parts. The earlier examples will be use
 - **ACHIEVEMENT NAME** : the name of the achievement
 
 ### Multiple criteria addition
-The `NT` function is used when an achievement has multiple criteria that need to be added to a tooltip.
+The `data` function is used when an achievement has multiple criteria that need to be added to a tooltip.
 ```lua
 { -- Zaralek Cavern Basic / Advanced / Reverse
-    NT, {17483, 17484, 17485, 17486, 17487, 17488, 17489, 17490, 17491}, type.Unit,
+    data, {17483, 17484, 17485, 17486, 17487, 17488, 17489, 17490, 17491}, type.Unit,
     {
         {1, 202524}, -- Crystal Circuit
         {2, 202676}, -- Caldera Cruise
@@ -84,10 +84,10 @@ The `NT` function is used when an achievement has multiple criteria that need to
 ```
 
 #### Format
-The `NT` function is a little bit more complex because of its flexibility. See the examples.
+The `data` function is a little bit more complex because of its flexibility. See the examples.
 ```lua
 { -- ACHIEVEMENT NAME
-    NT, ACHIEVEMENT ID,
+    data, ACHIEVEMENT ID,
     {
         {ACHIEVEMENT CRITERIA INDEX, {OBJECT ID1, OBJECT ID2, ...}, OBJECT TYPE, FACTION}, -- ACHIEVEMENT CRITERIA NAME
         {ACHIEVEMENT CRITERIA INDEX, OBJECT ID, OBJECT TYPE, FACTION}, -- ACHIEVEMENT CRITERIA NAME
@@ -95,7 +95,7 @@ The `NT` function is a little bit more complex because of its flexibility. See t
     }
 },
 { -- ACHIEVEMENT NAME
-    NT, {ACHIEVEMENT ID1, ACHIEVEMENT ID2, ...},
+    data, {ACHIEVEMENT ID1, ACHIEVEMENT ID2, ...},
     {
         ObjectType = OBJECT TYPE,
         Faction = FACTION
@@ -107,7 +107,7 @@ The `NT` function is a little bit more complex because of its flexibility. See t
     }
 },
 { -- ACHIEVEMENT NAME
-    NT, ACHIEVEMENT ID, OBJECT TYPE
+    data, ACHIEVEMENT ID, OBJECT TYPE
     {
         {ACHIEVEMENT CRITERIA INDEX, {OBJECT ID1, OBJECT ID2, ...}}, -- ACHIEVEMENT CRITERIA NAME
         {ACHIEVEMENT CRITERIA INDEX, OBJECT ID}, -- ACHIEVEMENT CRITERIA NAME
@@ -116,7 +116,7 @@ The `NT` function is a little bit more complex because of its flexibility. See t
 },
 ```
 
-- **NT** : required, function that will be called in KAF
+- **data** : required, function that will be called in KAF
 - **ACHIEVEMENT IDn** : the achievement id
 - **ACHIEVEMENT CRITERIA INDEX** : the achievement criteria index; 0 if the achievement has no criteria
 - **OBJECT TYPE** : the id of the type of the object that will show the tooltip
@@ -126,7 +126,7 @@ The `NT` function is a little bit more complex because of its flexibility. See t
 - **ACHIEVEMENT CRITERIA NAME** : the name of the achievement criteria
 
 A little bit more explanation.
-- `NT` is always there.
+- `data` is always there.
 - `ACHIEVEMENT ID`, a single achievement or `{ACHIEVEMENT ID1, ACHIEVEMENT ID2, ...}` multiple achievements that use the same data. One of these has to be defined, not both.
 - From the 3rd element in the list on, the data becomes dynamic to reduce duplication but increases complexity. The 3rd element is either empty, skipped as seen in example 1, a list of data as seen in example 2 or the `OBJECT TYPE` as seen in example 3. When the 3rd element is a list of data, both the OBJECT TYPE and FACTION are defined there.
 - The last element is always the list of achievement criteria. The order of elements per criteria is fixed but OBJECT TYPE and FACTION are optional here depending if either are defined in element 3 or just not required.

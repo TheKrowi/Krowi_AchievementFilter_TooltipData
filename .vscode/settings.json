@@ -504,7 +504,8 @@
         "C_CurrencyInfo",
         "AchievementFrameFilterDropDownButton",
         "AllTheThings",
-        "KrowiAF"
+        "KrowiAF",
+        "PLAYER_FACTION_GROUP"
     ],
     "Lua.diagnostics.disable": [
         "deprecated",
