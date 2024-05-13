@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 1.3 - 2024-05-12
+### Changed
+- Code cleanup and API improvements
+
 ## 1.2 - 2024-05-12
 ### Added
 - Moved remaining data for Dragonflight

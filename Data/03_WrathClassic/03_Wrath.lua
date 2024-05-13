@@ -1,11 +1,11 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local datum, data, type = KrowiAF.AddTooltipDatum, KrowiAF.AddTooltipData, Enum.TooltipDataType;
+local type = Enum.TooltipDataType;
 
 KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
     { -- To All The Squirrels Who Shared My Life
-        data, 2557, type.Unit,
+        2557, type.Unit,
         {
             {1, 5951}, -- Hare
             {2, 28440}, -- Tundra Penguin
@@ -23,7 +23,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- Pest Control
-        data, 2556, type.Unit,
+        2556, type.Unit,
         {
             {1, 1412}, -- Squirrel
             {2, 28202}, -- Zul'Drak Rat
@@ -46,7 +46,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- The Outland Gourmet
-        data, 1800,
+        1800,
         {
             {1, 33053, type.Item}, -- Hot Buttered Trout
             {1, 42305, type.Spell}, -- Hot Buttered Trout
@@ -101,7 +101,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- Second That Emotion
-        data, 1780,
+        1780,
         {
             {1, {43490, 43507}, type.Item}, -- Tasty Cupcake
             {1, 58512, type.Spell}, -- Tasty Cupcake
@@ -114,7 +114,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- The Northrend Gourmet
-        data, 1779,
+        1779,
         {
             {1, {43005, 43034}, type.Item}, -- Spiced Mammoth Treats
             {1, 57440, type.Spell}, -- Spiced Mammoth Treats
@@ -209,7 +209,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- The Winter Veil Gourmet
-        data, 1688, type.Item,
+        1688, type.Item,
         {
             {1, {17197, 17200}}, -- Gingerbread Cookie
             {2, {17198, 17201}}, -- Winter Veil Egg Nog
@@ -217,7 +217,7 @@ KrowiAF.AdditionalTooltipData.WrathOfTheLichKing = {
         }
     },
     { -- To All The Squirrels I've Loved Before
-        data, 1206, type.Unit,
+        1206, type.Unit,
         {
             {1, 2442}, -- Cow
             {2, 620}, -- Chicken

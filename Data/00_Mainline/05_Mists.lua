@@ -1,11 +1,11 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local datum, data, type = KrowiAF.AddTooltipDatum, KrowiAF.AddTooltipData, Enum.TooltipDataType;
+local type = Enum.TooltipDataType;
 
 KrowiAF.AdditionalTooltipData.MistsOfPandaria = {
     { -- Pandaren Delicacies
-        data, 7330,
+        7330,
         {
             {1, 86069, type.Item}, -- Rice Pudding
             {1, 125122, type.Spell}, -- Rice Pudding
@@ -58,7 +58,7 @@ KrowiAF.AdditionalTooltipData.MistsOfPandaria = {
         }
     },
     { -- Pandaren Cuisine
-        data, 7329,
+        7329,
         {
 			{1, 86057, type.Item}, -- Sliced Peaches
 			{1, 125117, type.Spell}, -- Sliced Peaches
@@ -95,7 +95,7 @@ KrowiAF.AdditionalTooltipData.MistsOfPandaria = {
         }
     },
     { -- The Pandaren Gourmet (15, 30)
-        data, {7326, 7327},
+        {7326, 7327},
         {
 			{1, 86057, type.Item}, -- Sliced Peaches
 			{1, 125117, type.Spell}, -- Sliced Peaches
@@ -184,7 +184,7 @@ KrowiAF.AdditionalTooltipData.MistsOfPandaria = {
         }
     },
     { -- To All the Squirrels I Once Caressed?
-        data, 6350, type.Unit,
+        6350, type.Unit,
         {
             {1, {63288, 64798}}, -- Amethyst Spiderling
             {2, {63062, 64782, 129153, 144920}}, -- Bandicoon

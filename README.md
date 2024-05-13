@@ -45,7 +45,7 @@ In each sub-folder there are multiple files per expansion. Data is added to the 
 Example: if an achievement was added in Wrath of the Lich King, tooltip data should be added to `03_Wrath.lua`
 
 ## Functions
-There are 2 ways to add data with either the `N` or `NT` functions.
+There are 2 ways to add data with either the `datum` or `data` functions.
 
 ### Single criteria addition
 The `datum` function is generally used when an achievement has a single criteria that needs to be added to a tooltip. It can also be used for each criteria individually but not preferred.
@@ -84,7 +84,7 @@ The `data` function is used when an achievement has multiple criteria that need 
 ```
 
 #### Format
-The `data` function is a little bit more complex because of its flexibility. See the examples.
+The `data` function is a little bit more complex because of its flexibility. The function will default to this one if no function is defined. See the examples.
 ```lua
 { -- ACHIEVEMENT NAME
     data, ACHIEVEMENT ID,
@@ -95,7 +95,7 @@ The `data` function is a little bit more complex because of its flexibility. See
     }
 },
 { -- ACHIEVEMENT NAME
-    data, {ACHIEVEMENT ID1, ACHIEVEMENT ID2, ...},
+    {ACHIEVEMENT ID1, ACHIEVEMENT ID2, ...},
     {
         ObjectType = OBJECT TYPE,
         Faction = FACTION
@@ -107,7 +107,7 @@ The `data` function is a little bit more complex because of its flexibility. See
     }
 },
 { -- ACHIEVEMENT NAME
-    data, ACHIEVEMENT ID, OBJECT TYPE
+    ACHIEVEMENT ID, OBJECT TYPE
     {
         {ACHIEVEMENT CRITERIA INDEX, {OBJECT ID1, OBJECT ID2, ...}}, -- ACHIEVEMENT CRITERIA NAME
         {ACHIEVEMENT CRITERIA INDEX, OBJECT ID}, -- ACHIEVEMENT CRITERIA NAME
@@ -116,7 +116,7 @@ The `data` function is a little bit more complex because of its flexibility. See
 },
 ```
 
-- **data** : required, function that will be called in KAF
+- **data** : optional, function that will be called in KAF, defaults to it if not defined
 - **ACHIEVEMENT IDn** : the achievement id
 - **ACHIEVEMENT CRITERIA INDEX** : the achievement criteria index; 0 if the achievement has no criteria
 - **OBJECT TYPE** : the id of the type of the object that will show the tooltip

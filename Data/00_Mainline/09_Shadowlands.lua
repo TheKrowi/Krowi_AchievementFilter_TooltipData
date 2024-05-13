@@ -1,11 +1,11 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local datum, data, type = KrowiAF.AddTooltipDatum, KrowiAF.AddTooltipData, Enum.TooltipDataType;
+local type = Enum.TooltipDataType;
 
 KrowiAF.AdditionalTooltipData.Shadowlands = {
     { -- To All the Squirrels I've Loved and Lost
-        data, 14731, type.Unit,
+        14731, type.Unit,
         {
             {1, 170242}, -- Dreadfur Kit
             {2, 170006}, -- Darkened Wyrmling
@@ -22,7 +22,7 @@ KrowiAF.AdditionalTooltipData.Shadowlands = {
         }
     },
     { -- To All the Squirrels I Set Sail to See
-        data, 14730, type.Unit,
+        14730, type.Unit,
         {
             {1, {131376, 133134, 137253, 143038}}, -- Honey Bee
             {2, {143220, 143358}}, -- Olivewing
@@ -39,7 +39,7 @@ KrowiAF.AdditionalTooltipData.Shadowlands = {
         }
     },
     { -- To All the Squirrels I Love Despite Their Scars
-        data, 14729, type.Unit,
+        14729, type.Unit,
         {
             {1, {97323, 113345}}, -- Felspider
             {2, 113278}, -- Tenebrous Snake
@@ -57,7 +57,7 @@ KrowiAF.AdditionalTooltipData.Shadowlands = {
         }
     },
     { -- To All the Squirrels Through Time and Space
-        data, 14728, type.Unit,
+        14728, type.Unit,
         {
             {1, {88417, 88975}}, -- Royal Moth
             {2, {82045, 88976}}, -- Moonshell Crab

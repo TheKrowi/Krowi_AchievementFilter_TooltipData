@@ -1,11 +1,11 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local datum, data, type = KrowiAF.AddTooltipDatum, KrowiAF.AddTooltipData, Enum.TooltipDataType;
+local type = Enum.TooltipDataType;
 
 KrowiAF.AdditionalTooltipData.Dragonflight = {
     { -- Northrend Basic / Advanced / Reverse
-        data, {19674, 19675, 19676, 19677, 19679, 19681, 19682, 19683, 19684}, type.Unit,
+        {19674, 19675, 19676, 19677, 19679, 19681, 19682, 19683, 19684}, type.Unit,
         {
             {1, 211762}, -- Scalawag Slither
             {2, 211886}, -- Daggercap Dart
@@ -22,7 +22,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Zaralek Cavern Challenge
-        data, {18786, 18787, 18788}, type.Unit,
+        {18786, 18787, 18788}, type.Unit,
         {
             {1, 202524}, -- Crystal Circuit Challenge
             {2, 202524}, -- Crystal Circuit Reverse Challenge
@@ -39,7 +39,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Forbidden Reach Challenge
-        data, {18779, 18780, 18781}, type.Unit,
+        {18779, 18780, 18781}, type.Unit,
         {
             {1, 200183}, -- Stormsunder Crater Circuit Challenge
             {2, 200183}, -- Stormsunder Crater Circuit Reverse Challenge
@@ -56,7 +56,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Thaldraszus Challenge
-        data, {18760, 18761, 18762}, type.Unit,
+        {18760, 18761, 18762}, type.Unit,
         {
             {1, 192555}, -- The Flowing Forest Flight Challenge
             {2, 192555}, -- The Flowing Forest Flight Reverse Challenge
@@ -73,7 +73,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Azure Span Challenge
-        data, {18757, 18758, 18759}, type.Unit,
+        {18757, 18758, 18759}, type.Unit,
         {
             {1, 191572}, -- The Azure Span Sprint Challenge
             {2, 191572}, -- The Azure Span Sprint Reverse Challenge
@@ -90,7 +90,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Ohn'ahran Plains Challenge
-        data, {18754, 18755, 18756}, type.Unit,
+        {18754, 18755, 18756}, type.Unit,
         {
             {1, 190928}, -- Sundapple Copse Circuit Challenge
             {2, 190928}, -- Sundapple Copse Circuit Reverse Challenge
@@ -107,7 +107,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Waking Shores Challenge: Silver / Gold
-        data, {18749, 18750}, type.Unit,
+        {18749, 18750}, type.Unit,
         {
             {1, 190123}, -- Ruby Lifeshrine Loop Challenge
             {2, 190123}, -- Ruby Lifeshrine Loop Reverse Challenge
@@ -128,7 +128,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Waking Shores Challenge: Bronze
-        data, 18748, type.Unit,
+        18748, type.Unit,
         {
             {1, 190123}, -- Ruby Lifeshrine Loop Challenge: Bronze
             {2, 190123}, -- Ruby Lifeshrine Loop Reverse Challenge: Bronze
@@ -149,7 +149,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Battler of Zaralek Cavern Aquatic / Beast / Critter / Dragonkin / Elemental / Flying / Humanoid / Magic / Mechanical / Undead
-        data, {17881, 17882, 17883, 17890, 17904, 17905, 17915, 17916, 17917, 17918}, type.Unit,
+        {17881, 17882, 17883, 17890, 17904, 17905, 17915, 17916, 17917, 17918}, type.Unit,
         {
             {1, 201004}, -- Explorer Bezzert
             {2, 204792}, -- Shinmura
@@ -158,7 +158,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Battle in Zaralek Cavern
-        data, 17880, type.Unit,
+        17880, type.Unit,
         {
             {1, 201004}, -- To a Land Down Under
             {2, 204792}, -- Are They Not Beautiful?
@@ -167,7 +167,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Global Swarming
-        data, 17541, type.Unit,
+        17541, type.Unit,
         {
             {1, 200684}, -- Vortex
             {2, 200692}, -- Tremblor
@@ -176,7 +176,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Zaralek Cavern Basic / Advanced / Reverse
-        data, {17483, 17484, 17485, 17486, 17487, 17488, 17489, 17490, 17491}, type.Unit,
+        {17483, 17484, 17485, 17486, 17487, 17488, 17489, 17490, 17491}, type.Unit,
         {
             {1, 202524}, -- Crystal Circuit
             {2, 202676}, -- Caldera Cruise
@@ -187,7 +187,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Battle on the Dragon Isles II
-        data, 17406, type.Unit,
+        17406, type.Unit,
         {
             {1, 201849}, -- Adinakon
             {2, 201858}, -- Lyver
@@ -200,7 +200,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Forbidden Reach Basic / Advanced / Reverse
-        data, {17279, 17280, 17281, 17284, 17286, 17287, 17288, 17289, 17290}, type.Unit,
+        {17279, 17280, 17281, 17284, 17286, 17287, 17288, 17289, 17290}, type.Unit,
         {
             {1, 200183}, -- Stormsunder Crater Circuit
             {2, 200212}, -- Morqut Ascent
@@ -211,7 +211,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- To All the Squirrels Hidden Til Now
-        data, 16729, type.Unit,
+        16729, type.Unit,
         {
             {1, 189737}, -- Kelp Nibbler
             {2, 192135}, -- Phoenix Hatchling
@@ -228,7 +228,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Great Gourmand of The Ruby Feast
-        data, 16556, type.Item,
+        16556, type.Item,
         {
             {1, 200886}, -- Lemon Silverleaf Tea
             {2, 200885}, -- Cinna-Cinderbloom Tea
@@ -253,7 +253,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Battler of the Dragon Isles Aquatic / Beast / Critter / Dragonkin / Elemental / Flying / Humanoid / Magic / Mechanical / Undead
-        data, {16501, 16503, 16504, 16505, 16506, 16507, 16508, 16509, 16510, 16511}, type.Unit,
+        {16501, 16503, 16504, 16505, 16506, 16507, 16508, 16509, 16510, 16511}, type.Unit,
         {
             {1, 197417}, -- Arcantus
             {2, 197102}, -- Bakhushek
@@ -266,7 +266,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Battle on the Dragon Isles
-        data, 16464, type.Unit,
+        16464, type.Unit,
         {
             {1, 197447}, -- Eye of the Stormling
             {2, 197417}, -- Mini Manafiend Melee
@@ -279,7 +279,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Who's a Good Bakar?
-        data, 16424, type.Unit,
+        16424, type.Unit,
         {
             {1, 197569}, -- Alli
             {2, 189274}, -- Baba
@@ -304,7 +304,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Ohn'ahran Plains Advanced / Reverse
-        data, {15930, 15931, 15932, 17198, 17199, 17200}, type.Unit,
+        {15930, 15931, 15932, 17198, 17199, 17200}, type.Unit,
         {
             {1, 190928}, -- Sundapple Copse Circuit
             {2, 191121}, -- Fen Flythrough
@@ -314,7 +314,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Thaldraszus Basic / Advanced / Reverse
-        data, {15924, 15925, 15926, 15936, 15937, 15938, 17204, 17205, 17206}, type.Unit,
+        {15924, 15925, 15926, 15936, 15937, 15938, 17204, 17205, 17206}, type.Unit,
         {
             {1, 192555}, -- The Flowing Forest Flight
             {2, 193651}, -- Tyrhold Trial
@@ -325,7 +325,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Azure Span Basic / Advanced / Reverse
-        data, {15921, 15922, 15923, 15933, 15934, 15935, 17201, 17202, 17203}, type.Unit,
+        {15921, 15922, 15923, 15933, 15934, 15935, 17201, 17202, 17203}, type.Unit,
         {
             {1, 191572}, -- The Azure Span Sprint
             {2, 191947}, -- The Azure Span Slalom
@@ -336,7 +336,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Ohn'ahran Plains Basic
-        data, {15918, 15919, 15920}, type.Unit,
+        {15918, 15919, 15920}, type.Unit,
         {
             {1, 190928}, -- Sundapple Copse Circuit
             {2, 191121}, -- Fen Flythrough
@@ -348,7 +348,7 @@ KrowiAF.AdditionalTooltipData.Dragonflight = {
         }
     },
     { -- Waking Shores Basic / Advanced / Reverse
-        data, {15915, 15916, 15917, 15927, 15928, 15929, 17195, 17196, 17197}, type.Unit,
+        {15915, 15916, 15917, 15927, 15928, 15929, 17195, 17196, 17197}, type.Unit,
         {
             {1, 190123}, -- Ruby Lifeshrine Loop
             {2, 190473}, -- Wild Preserve Slalom
