@@ -126,7 +126,6 @@ The `data` function is a little bit more complex because of its flexibility. The
 - **ACHIEVEMENT CRITERIA NAME** : the name of the achievement criteria
 
 A little bit more explanation.
-- `data` is always there.
 - `ACHIEVEMENT ID`, a single achievement or `{ACHIEVEMENT ID1, ACHIEVEMENT ID2, ...}` multiple achievements that use the same data. One of these has to be defined, not both.
 - From the 3rd element in the list on, the data becomes dynamic to reduce duplication but increases complexity. The 3rd element is either empty, skipped as seen in example 1, a list of data as seen in example 2 or the `OBJECT TYPE` as seen in example 3. When the 3rd element is a list of data, both the OBJECT TYPE and FACTION are defined there.
 - The last element is always the list of achievement criteria. The order of elements per criteria is fixed but OBJECT TYPE and FACTION are optional here depending if either are defined in element 3 or just not required.
