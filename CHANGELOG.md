@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.1 - 2024-07-25
+### Wrath Classic
+- Removed data files
+
 ## 2.0 - 2024-07-24
 ### Changed
 - Updated toc for The War Within
