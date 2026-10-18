@@ -1,6 +1,21 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## 2.1 - 2024-07-25
+### Wrath Classic
+- Removed data files
+
+## 2.0 - 2024-07-24
+### Changed
+- Updated toc for The War Within
+
+### Wrath Classic
+- No longer supported
+
+## 1.3 - 2024-05-12
+### Changed
+- Code cleanup and API improvements
+
 ## 1.2 - 2024-05-12
 ### Added
 - Moved remaining data for Dragonflight

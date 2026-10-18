@@ -1,14 +1,8 @@
-<p><h3>Added</h3></p>
+<p><h3>Changed</h3></p>
 <ul>
-<li>Initial release (dev note: all data for Wrath and Cata classic copied, rest to do)</li>
+<li>Updated toc for The War Within</li>
 </ul>
-<p><h3>Added (1.1)</h3></p>
+<p><h3>Wrath Classic</h3></p>
 <ul>
-<li>Moved most data for Dragonflight, Dragon races WIP</li>
-</ul>
-<p><h3>Added (1.2)</h3></p>
-<ul>
-<li>Moved remaining data for Dragonflight</li>
-<li>Dragon Racing Challenges</li>
-<li>Northrend Cup</li>
+<li>No longer supported</li>
 </ul>

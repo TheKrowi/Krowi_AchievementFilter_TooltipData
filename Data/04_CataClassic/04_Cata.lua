@@ -1,23 +1,23 @@
 local _, addon = ...;
 local shared = addon.Shared;
 
-local N, NT, type, fac = addon.AddTooltipData, addon.AddTooltipDataTable, addon.TooltipDataType, addon.Faction;
+local type = Enum.TooltipDataType;
 
 KrowiAF.AdditionalTooltipData.Cataclysm = {
     { -- Drown Your Sorrows
-        NT, 5754,
+        5754,
         {
             -- NO CRITERIA DATA AVAILABLE - 2024-05-05
         }
     },
     { -- Cataclysmically Delicious
-        NT, 5753,
+        5753,
         {
             -- NO CRITERIA DATA AVAILABLE - 2024-05-05
         }
     },
     { -- To All the Squirrels Who Cared for Me
-        NT, 5548, type.Unit,
+        5548, type.Unit,
         {
             {1, {48683, 62904}}, -- Yellow-Bellied Marmot
             {2, 61323}, -- Wharf Rat
@@ -35,7 +35,7 @@ KrowiAF.AdditionalTooltipData.Cataclysm = {
         }
     },
     { -- The Cataclysmic Gourmet (15, 30)
-        NT, {5472, 5473},
+        {5472, 5473},
         {
             {1, {62649, 65432}, type.Item}, -- Fortune Cookie
             {1, 88019, type.Spell}, -- Fortune Cookie
